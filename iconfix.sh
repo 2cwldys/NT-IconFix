@@ -56,10 +56,12 @@ if [[ -f "$EXAMPLE_2" ]]; then
     rm "$EXAMPLE_2"
 fi
 
+# Delete the batch file equivalent
+rm -- "$BATCH_FILE"
+
 # Completion message
 echo "Icon fix complete..."
 read -p "Press Enter to continue..."
 
 # Delete this script
-rm -- "$BATCH_FILE"
 rm -- "$0"

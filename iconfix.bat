@@ -58,11 +58,11 @@ if exist "%EXAMPLE_2%" (
     del "%EXAMPLE_2%"
 )
 
+:: Delete the bash file equivalent
+del "%BASH_FILE%" >nul 2>&1
+
 :: Completion message
 echo Icon fix complete...
 pause
 
-:: Delete the batch and bash files only after the pause
-echo Deleting the batch file and bash file...
-del "%BASH_FILE%" >nul 2>&1
 del "%~f0" >nul 2>&1
